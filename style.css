@@ -78,16 +78,23 @@ nav a:hover {
   height: 8vh;
 }
 
+.hero-background {
+  background-color: #1e223d;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (optional) */
+}
+
 .hero {
   display: flex;
   align-items: center; /* Align items vertically in the center */
   justify-content: space-around; /* Distribute space around items */
-  background-color: #1e223d;
-  width: 100%;
+  width: 65%; /* Adjust width as needed */
 }
 
 #profilepic {
-  height: 50vh;
+  height: 30vh;
   margin-top: 8%;
   margin-bottom: 5%;
   /* border: solid 2px #c2973d; */
