@@ -1,350 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Crystal Ramos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="WorkHistory.css" />
-    <link rel="script" href="script.js" />
+
+    <!-- Google Web Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
-  <header>
-    <link
-      href="https://fonts.googleapis.com/css?family=Monda|Ultra"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <div class="header-bar">
-      <div id="nav_container">
-        <nav role="navigation">
-          <a href="#" id="about">About</a>
-          <a href="#" id="clients">Projects</a>
-          <a href="#" id="contact">Contact</a>
-        </nav>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
+    >
+
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </nav>
+    <!-- Navbar End -->
 
-  <body>
-    <div class="hero-background">
-      <div class="hero">
-      <img
-        id="profilepic"
-        src="profilepic.png"
-        alt="Crystal's profile pictue"
-      />
-
-      <div class="typewriter">
-        <p class="typewriter-line1">Hi, my name is Crystal Ramos</p>
-        <p class="typewriter-line2">
-          I'm a full stack developer based in Raleigh, NC.
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-<div class="work-history">
-
-  <svg display="none">
-    <symbol id="arrow">
-      <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-    </symbol>
-  </svg>
-  <h1>My Experience</h1>
-  <div id="timeline" class="timeline">
-    <div class="btn-group">
-      <!-- <button class="btn" type="button" data-action="expand">Expand All</button>
-      <button class="btn" type="button" data-action="collapse">Collapse All</button> -->
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item1-name" class="timeline__meta">
-          <time class="timeline__date" datetime="1970-01-01">November 2023 - January 2024</time><br>
-          <strong class="timeline__title">Service Desk Analyst</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p"> <ul> 
-            <li> Provided technical support to over 10,000 users via chat, email, and phone, ensuring seamless operations and high customer satisfaction</li>
-            <li>Managed Active Directory, executing tasks such as password resets and overseeing group access, enhancing system security and user management skills</li>
-            <li>Troubleshot network connectivity issues and various applications, developing strong problem-solving and analytical skills</li>
-            <li>Analyzed customer issues to prioritize tasks effectively, honing project management and organizational skills</li>
-            </ul>
-            </p>
+   
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item2-name" class="timeline__meta">
-          <time class="timeline__date" datetime="1973-10-17">April 2023 - November 2023</time><br>
-          <strong class="timeline__title">Contracted Service Desk Analyst</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p"> 
-<ul>
-  <li>Constructed technical documentation and tutorials, enriching the company knowledge base and improving support efficiency</li>
-  <li>Provided technical support to over 35,000 end-users via email and phone, ensuring high customer satisfaction</li>
-  <li>Identified patterns in technical issues using analytical skills, developing standardized solutions that reduced repeat incidents</li>
-  <li>Managed Bitlocker implementation across 20,000+ devices, enhancing data security and encryption</li>
-</ul>
-            
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item3-name" class="timeline__meta">
-          <time class="timeline__date" datetime="2001-09-09">September 2016 - Present</time><br>
-          <strong class="timeline__title">IT Support</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p">
-            <ul>
-              <li>Delivered problem-solving solutions that resulted in a 98% first-time resolution rate</li>
-              <li>Provided remote support, resolving software and hardware issues via phone, TeamViewer, Skype, Discord and in-person sessions</li>
-              <li>Utilized extensive knowledge of software and hardware to offer comprehensive solutions and educational experiences for clients, leading to a 25% decrease in recurring support requests</li>
-              <li>Leveraged various online knowledge articles and forums, such as Microsoft’s KB and specific software forums, to provide accurate and up-to-date solutions</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item4-name" class="timeline__meta">
-          <time class="timeline__date" datetime="2009-02-13">August 2022 - December 2022</time><br>
-          <strong class="timeline__title">Contracted Quality Assurance Inspector</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p">
-            <ul>
-              <li>Documented and maintained statistics for over 30,000 data points, ensuring data integrity</li>
-              <li>Minimized machine downtime through proactive hardware troubleshooting, honing technical skills</li>
-              <li>Sharpened quality control by actively identifying and reporting deviations from standards, ensuring product quality</liAdministered and facilitated onboarding for newly hired team members>
-              <li>Administered and facilitated onboarding for newly hired team members</li>
+    <!-- Video Modal End -->
 
-</ul>
-
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
-          <time class="timeline__date" datetime="2033-05-18">August 2021 - July 2022</time><br>
-          <strong class="timeline__title">Dialysis Patient Care Technician</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p">
-            <ul>
-              <li>Managed all patient health data in EPIC for optimal efficiency</li>
-              <li>Troubleshot dialysis machines, minimizing equipment downtime and ensuring uninterrupted patient care</li>
-              <li>Maintained meticulous patient records by documenting dialysis procedures in detail</li>
-              <li>Reviewed and assessed 20+ dialysis orders and patient conditions daily for comprehensive and effective treatment</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
-          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-            <use href="#arrow" />
-          </svg>
-        </button>
-        <span class="timeline__dot"></span>
-        <span id="item6-name" class="timeline__meta">
-          <time class="timeline__date" datetime="2038-01-19">March 2016 - May 2022</time><br>
-          <strong class="timeline__title">Shipping Clerk</strong>
-        </span>
-      </div>
-      <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
-        <div class="timeline__item-body-content">
-          <p class="timeline__item-p">
-            <ul>
-              <li>Leveraged WMS for efficient data entry and operations, ensuring accurate inventory records and streamlined shipping processes</li>
-              <li>Operated the WMS efficiently, contributing to streamlined shipping processes</li>
-              <li>Consistently exceeded productivity targets, ensuring timely order fulfillment</li>
-              <li>Maintained inventory of products  and supplies, proactively advising management when stock needed replenishment, preventing delays in shipping operations</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Header Start -->
+    <div
+      class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
+      id="home"
+      style="min-height: 100vh"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+            <img
+              class="img-fluid w-100 rounded-circle shadow-sm"
+              src="profilepic.png"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 text-center text-lg-left">
+            <h3 class="text-white font-weight-normal mb-3">Hi, I'm</h3>
+            <h1 id="full-name">Crystal Ramos</h1>
+            <h1
+              class="typed-text-output d-inline font-weight-lighter text-white"
+            ></h1>
+            <div class="typed-text d-none">
+              Full-Stack Developer, Front End Developer, Web Developer
+            </div>
   
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
 
-</div>
-
-
-
-    <div class="projects">
-      <h3>Projects</h3>
-      <div class="p1">
-        <img
-          id="project1"
-          src="FlappyBirdClone.gif"
-          alt="Flappy Bird Clone Gameplay"
-        />
-        <div class="p1_overlay">
-          <div class="text">Flappy Bird Clone</div>
-          
-          <div class="project-btns">
-
-            <a href="https://crystalogy.github.io/Portfolio/" target="_blank">
-              <img class="contact-btn"src="url.png" alt="Button navigates to project" />
-          </a>
-
-
-            <a href="https://github.com/crystalogy/flappy_bird_clone" target="_blank">
-              <img class="contact-btn"src="github-white.png" alt="Button navigates to github" />
-          </a>
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1>
+            About Me
+          </h1>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 pb-4 pb-lg-0">
+            <img class="img-fluid rounded w-100" src="img/about.jpg" alt="" />
+          </div>
+          <div class="col-lg-7">
+            <!-- <h3 class="mb-4">About Header</h3> -->
+            <p>
+              Passionate about technology and driven by innovation, I bring hands-on experience in
+               Java Full Stack Development, technical troubleshooting, and data analysis. 
+               My proficiency in Java, SQL, JavaScript, HTML, and CSS, combined with my commitment to continuous learning,
+              has equipped me to tackle complex challenges and deliver effective solutions. 
+              As a dedicated professional with a keen eye for detail and a history of improving team productivity, 
+              I am excited to contribute my skills to forward-thinking projects and dynamic teams.
+            </p>
+          </div>
 
           </div>
         </div>
       </div>
     </div>
-
-    <div class="contact-container">
-      <div class="contact">
-        <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Contact Me</h4>
-
-<div id="contact-btns-container">
+    <!-- About End -->
 
 
 
-  <!-- <p id="myText">Hello World</p>
-<button class="btn" onclick="copyContent()">Copy!</button> -->
 
-<!-- <button id="copy-quote" class="btn">Copy!</button> -->
-
-
-
-          <a href="https://www.linkedin.com/in/crystalmramos/" target="_blank">
-          <img class="contact-btn" src="linkedin.png" alt="Button natigating to Github Profile">
+   
+    <!-- Projects Start -->
+    <main class="projects">
+      <div class="header">
+        <h1>Projects</h1>
+        <!-- <p>
+          description
+        </p> -->
+      </div>
+      <div class="projects-container">
+      <div class="project">
+        <img class="project-display" src="FlappyBirdClone.gif" alt="Project 1: Flappy Bird Clone" />
+        <div class="project-overlay">
+          <span>Flappy Bird Clone</span>
+          <div>
+            <!-- <h2>header</h2>
+            <p>text under header</p> -->
+            <a href="https://crystalogy.github.io/Portfolio/" target="_blank">
+              <img class="project-btns"src="url.png" alt="Button navigates to project" />
           </a>
 
-          <a href="https://github.com/crystalogy" target="_blank">
-<img class="contact-btn" src="github-black.png" alt="Button natigating to Github Profile">
-</a>
+          <a href="https://github.com/crystalogy/flappy_bird_clone" target="_blank">
+            <img class="project-btns"src="github-white.png" alt="button to navigate to code on github" />
+        </a>
 
-<img class="contact-btn" id="copy-email"  src="email.png" alt="Button that copies email to clip board">
-
-
-</div>
-
-          <form class="needs-validation" novalidate="">
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="firstName" class="form-label">First name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder=""
-                  value=""
-                  required=""
-                />
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">Last name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  placeholder=""
-                  value=""
-                  required=""
-                />
-                <div class="invalid-feedback">Valid last name is required.</div>
-              </div>
-
-              <div class="col-12">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="you@example.com"
-                />
-                <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
-                </div>
-              </div>
-
-              <div class="input-group">
-                <span class="input-group-text">Message</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-              </div>
-
-            <button class="w-100 btn btn-primary btn-lg" type="submit">
-              Send
-            </button>
-          </form>
+          </div>
         </div>
       </div>
+      <div class="project">
+        <img src="blank.jpg" alt="Spain" />
+        <div class="project-overlay">
+          <span>Project 2</span>
+          <div>
+  <!-- <h2>header</h2>
+            <p>text under header</p> -->
+            <img class="project-btns" src="github-white.png" alt="button to navigate to code on github">
+            <img class="project-btns" src="url.png" alt="button to navigate to code on github">
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <img src="blank.jpg" alt="Spain" />
+        <div class="project-overlay">
+          <span>Project 3</span>
+          <div>
+  <!-- <h2>header</h2>
+            <p>text under header</p> -->
+            <img class="project-btns" src="github-white.png" alt="button to navigate to code on github">
+            <img class="project-btns" src="url.png" alt="button to navigate to code on github">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Projects End -->
+
+
+
+    <!-- Contact Start -->
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1 >
+            Contact
+          </h1>
+         
+        </div>
+        <div class="contact-container">
+ 
+ 
+            <a href="https://www.linkedin.com/in/crystalmramos/" target="_blank">
+              <img style="width: 45px; height: 45px;" class="contact-btn" src="linkedin.png" alt="Button natigating to Github Profile">
+              </a>
+    
+              <a href="https://github.com/crystalogy" target="_blank">
+    <img style="width: 45px; height: 45px;" class="contact-btn" src="github-black.png" alt="Button natigating to Github Profile">
+    </a>
+    
+    
+    <!-- <img style="width: 45px; height: 45px;" class="contact-btn" id="copy-email"  src="email.png" alt="Button that copies email to clip board"> -->
+
+        </div>
+      </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+   
+     
     </div>
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!--  Javascript -->
+    <script src="main.js"></script>
   </body>
 </html>
