@@ -119,12 +119,6 @@ abbr[data-original-title] {
   text-decoration-skip-ink: none;
 }
 
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
 ol,
 ul,
 dl {
@@ -257,17 +251,6 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 button,
@@ -10174,15 +10157,6 @@ h6,
   border-radius: 100px;
 }
 
-.btn-social {
-  width: 45px;
-  height: 45px;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  border-radius: 45px;
-}
-
 .form-control {
   border-radius: 25px;
 }
@@ -10241,16 +10215,6 @@ h6,
 .typed-cursor {
   font-size: 45px;
   color: #ffffff;
-}
-
-.progress {
-  border-radius: 10px;
-}
-
-.progress .progress-bar {
-  width: 0px;
-  border-radius: 10px;
-  transition: 2s;
 }
 
 .service-icon {
