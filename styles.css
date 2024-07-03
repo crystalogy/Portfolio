@@ -10121,7 +10121,6 @@ a.text-dark:focus {
   }
 }
 
-/********** Template CSS ************/
 h1,
 .font-weight-bolder {
   font-weight: 900 !important;
@@ -10181,6 +10180,41 @@ h6,
   animation: action 1s infinite alternate;
 }
 
+.contact-btn-container {
+  margin: 25px;
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.contact-btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: white;
+}
+
+.contact-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: white;
+}
+
+.contact1 {
+}
+
+.contact2 {
+}
+
+/* -------------------------- */
 @keyframes action {
   0% {
     transform: translateY(0);
