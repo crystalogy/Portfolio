@@ -10349,29 +10349,8 @@ h6,
     overflow: hidden;
     /* background-image: url("FlappyBirdClone.gif"); */
     background-size: cover;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("FlappyBirdClone.gif");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    /border-radius: 12px;
-    overflow: hidden; */
-
-    /* img.project {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      object-position: center;
-      position: absolute;
-      inset: 0;
-    } */
 
     .project-display {
-      /* width: 100%;  */
-      /* Adjust the width as needed, could be less than 100% */
       width: auto;
       height: 80%; /* Maintain aspect ratio */
       object-fit: contain; /* Ensure the whole GIF is visible */
@@ -10385,8 +10364,6 @@ h6,
       background-color: #000032a1;
       border-radius: 50%;
     }
-
-    margin: 0 10px; /* 0 top and bottom, 10px left and right */
 
     .project-overlay {
       position: absolute;
